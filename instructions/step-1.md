@@ -8,7 +8,11 @@ Le shell étant un interpréteur Javascript, il est possible d'insérer plusieur
 
 ```javascript
 for (var i = 1 ; i <= 100 ; i++) {
-    db.personnes.insert({ "prenom" : "Prenom_" + i, "nom" : "Nom_" + i, "age" : (Math.floor(Math.random() * 50) + 20) })
+    db.personnes.insert({
+      "prenom" : "Prenom_" + i,
+      "nom" : "Nom_" + i,
+      "age" : (Math.floor(Math.random() * 50) + 20)
+    })
 }
 ```
 
@@ -27,7 +31,7 @@ db.personnes.insert([
 La méthode `findOne()` permet de récupérer un document d'une collection (échantillon) :
 
 ```javascript
-	db.personnes.findOne()
+db.personnes.findOne()
 ```
 
 La méthode `find()` permet de rechercher des documents dans une collection. Elle possède deux paramètres (optionnels) :
@@ -38,13 +42,13 @@ La méthode `find()` permet de rechercher des documents dans une collection. Ell
 Par exemple, pour rechercher les personnes se nommant "DUPONT" :
 
 ```javascript
-	db.personnes.find({ "nom" : "DUPONT" })
+db.personnes.find({ "nom" : "DUPONT" })
 ```
 
 Il existe un certain nombre d'opérateur utilisables pour filtrer lors de la recherche. Par exemple pour lister les personnes de plus de 60 ans :
 
 ```javascript
-	db.personnes.find({ "age" : { "$gte" : 60 }})
+db.personnes.find({ "age" : { "$gte" : 60 }})
 ```
 
 Si vous ne souhaitez retourner que le nom des personnes, utilisez une projection (deuxième paramètre de la méthode `find()`) :
@@ -66,7 +70,7 @@ Plus précisément, la méthode `find()` retourne un **curseur** permettant d'it
 Un curseur possède une méthode `count()`. Par exemple pour compter directement le nombre de personnes de plus de 60 ans :
 
 ```javascript
-	db.personnes.find({ "age" : { "$gte" : 60 }}).count()
+db.personnes.find({ "age" : { "$gte" : 60 }}).count()
 ```
 
 ## U - Update
