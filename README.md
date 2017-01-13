@@ -24,6 +24,7 @@ Les documents sont des documents [JSON](http://www.json.org/). Voici un exemple 
 
 *Plus précisément, le format de stockage des documents est [BSON](http://bsonspec.org/) (Binary JSON), une représentation binaire de JSON, proposant plus de types que JSON (le type Date notamment).*
 
+Les documents sont stockés dans des **collections**. Une **database** peut contenir plusieurs collections de documents. Un **serveur** MongoDB peut contenir plusieurs databases.
 
 ## Étapes du workshop
 
