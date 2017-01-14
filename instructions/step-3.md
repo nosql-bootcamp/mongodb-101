@@ -58,3 +58,7 @@ La méthode `explain()` permet de savoir si un index a été utilisé lors de l'
 ```javascript
 db.personnes.find({"nom": "DUPONT"}).explain()
 ```
+
+## Next
+
+Mongo-101 est terminé ! Essayez d'autres workshops de [nosql-bootcamp](https://github.com/nosql-bootcamp) ;-)

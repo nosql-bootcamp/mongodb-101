@@ -125,3 +125,7 @@ Pour voir la liste des collections d'une base de données :
 ```
 show collections
 ```
+
+## Next
+
+Vous pouvez passer à l'étape suivante : [Opérations CRUD](./step-1.md)
