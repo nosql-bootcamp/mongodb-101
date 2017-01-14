@@ -36,3 +36,5 @@ Les documents sont stockés dans des **collections**. Une **database** peut cont
 ## Liens utiles
 
 * Site officiel : https://www.mongodb.com/
+* Mongo Hacker (Mongo shell « on steroids ») : https://github.com/TylerBrock/mongo-hacker
+* Robomongo (GUI) : https://robomongo.org/
