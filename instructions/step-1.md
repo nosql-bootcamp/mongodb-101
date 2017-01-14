@@ -67,7 +67,18 @@ Si aucun des deux paramètres n'est renseigné, tous les documents de la collect
 
 Plus précisément, la méthode `find()` retourne un **curseur** permettant d'itérer sur la liste des documents résultant de la recherche. Le shell itère automatiquement sur le curseur et retourne les 20 premiers documents. La commande `it` permet de continuer l'itération pour obtenir les 20 documents suivants, et ainsi de suite.
 
-Un curseur possède une méthode `count()`. Par exemple pour compter directement le nombre de personnes de plus de 60 ans :
+Plusieurs méthodes utiles sont disponibles sur un curseur, dont :
+
+* `sort()` pour trier les documents
+* `limit()` pour limiter le nombre de documents
+
+Par exemple pour récupérer les 3 personnes les plus agées :
+
+```javascript
+db.personnes.find().sort({"age": -1}).limit(3)
+```
+
+Un curseur possède également une méthode `count()`. Par exemple pour compter directement le nombre de personnes de plus de 60 ans :
 
 ```javascript
 db.personnes.find({ "age" : { "$gte" : 60 }}).count()
