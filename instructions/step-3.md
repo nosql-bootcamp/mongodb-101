@@ -14,7 +14,7 @@ Par exemple, pour créer un index ascendant sur le nom des personnes :
 db.personnes.createIndex({"nom": 1})
 ```
 
-Remarque : utilisez `{"nom": -1}` pour créer un index descendant.
+Remarque : utilisez `{"nom": -1}` pour créer un index descendant, plus d'explications [ici](https://docs.mongodb.com/v3.2/core/index-compound/#index-ascending-and-descending).
 
 Vous pouvez vérifier que l'index a bien été créé grâce à la méthode `getIndexes()` :
 

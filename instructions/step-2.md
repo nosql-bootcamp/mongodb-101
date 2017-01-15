@@ -54,6 +54,8 @@ db.personnes.update(
 )
 ```
 
+Ici, nous avons ajouté "Javascript", "Scala" à droite du tableau et conservé les 3 derniers éléments (d'où le `-3`). Pour conserver les 3 premiers, on aurait utilisé la valeur `+3`.
+
 ## Next
 
 Vous pouvez passer à l'étape suivante : [Les index](./step-3.md)

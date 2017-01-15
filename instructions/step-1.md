@@ -51,7 +51,7 @@ Il existe un certain nombre d'opérateur utilisables pour filtrer lors de la rec
 db.personnes.find({ "age" : { "$gte" : 60 }})
 ```
 
-Si vous ne souhaitez retourner que le nom des personnes, utilisez une projection (deuxième paramètre de la méthode `find()`) :
+Si vous ne souhaitez retourner que le `nom` des personnes, utilisez une projection (deuxième paramètre de la méthode `find()`) :
 
 ```javascript
 db.personnes.find({ "nom" : "DUPONT" }, {"nom" : 1})
@@ -62,6 +62,7 @@ Par défaut l'identifiant `_id` est toujours remonté. Il est tout de même poss
 ```javascript
 db.personnes.find({ "nom" : "DUPONT" }, {"_id" : 0, "nom" : 1})
 ```
+NB : les valeurs `1` et `0` peuvent être remplacées par `true` et `false` néanmoins la totalité de la doc Mongo utilise la notation `0` et `1`.
 
 Si aucun des deux paramètres n'est renseigné, tous les documents de la collection seront retournés.
 
@@ -90,7 +91,7 @@ La mise à jour de documents se fait via la méthode `update()`, qui possède pl
 
 * le filtre permettant de sélectionner les documents à mettre à jour
 * la requête de mise à jour
-* des options (par exemple : `{"multi" : true}` pour mettre à jour tous les documents correspondant au filtre)
+* des options (par exemple : `{"multi" : true}` pour mettre à jour tous les documents correspondant au filtre). Dans le cas où cette option n'est pas précisée, seul le premier enregistrement trouvé est mis à jour.
 
 Par exemple, pour répartir les personnes dans deux catégories ("Master" pour les plus de 40 ans, "Junior" pour les autres) :
 
@@ -111,7 +112,7 @@ La méthode `remove()` permet de supprimer des documents étant donné un filtre
 db.personnes.remove({ "nom" : "DUPONT" })
 ```
 
-Une option (`justOne`) permet de préciser si la méthode `remove()` supprime un seul ou l'ensemble des documents correspondant au filtre.
+Une option (`{justOne : true}`) permet de préciser si la méthode `remove()` supprime un seul ou l'ensemble des documents correspondant au filtre.
 
 Depuis MongoDB 3.2, il existe les méthodes `deleteOne()` et `deleteMany()`.
 
@@ -123,7 +124,7 @@ db.personnes.drop()
 
 ## Bulk
 
-Il est possible d'effectuer plusieurs opérations de mise à jour en une seule fois grâce à la méthode `bulkWrite()`.
+Il est possible d'effectuer plusieurs opérations (insert, mise à jour et/ou delete) en une seule fois grâce à la méthode [`bulkWrite()`](https://docs.mongodb.com/manual/reference/method/db.collection.bulkWrite/).
 
 Cette méthode prend en paramètre un tableau d'objets représentant les opérations à réaliser. Par exemple si l'on souhaite catégoriser les personnes en "Junior" (moins de 40 ans) et "Master" (plus de 40 ans) et supprimer les personnes de moins de 25 ans :
 
