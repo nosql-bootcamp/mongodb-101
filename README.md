@@ -1,5 +1,7 @@
 # MongoDB 101
 
+![mongo-logo](https://upload.wikimedia.org/wikipedia/en/thumb/4/45/MongoDB-Logo.svg/300px-MongoDB-Logo.svg.png)
+
 **MongoDB 101** est un workshop permettant de découvrir la base de données NoSQL MongoDB et son écosystème, étape par étape.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
@@ -25,6 +27,8 @@ Les documents sont des documents [JSON](http://www.json.org/). Voici un exemple 
 *Plus précisément, le format de stockage des documents est [BSON](http://bsonspec.org/) (Binary JSON), une représentation binaire de JSON, proposant plus de types que JSON (le type Date notamment).*
 
 Les documents sont stockés dans des **collections**. Une **database** peut contenir plusieurs collections de documents. Un **serveur** MongoDB peut contenir plusieurs databases.
+
+Ce workshop est basé sur la **version 3.4.1** de MongoDB.
 
 ## Étapes du workshop
 
