@@ -3,7 +3,7 @@
 Il est possible d'utiliser des tableaux dans les documents. Par exemple, on peut stocker les compétences des personnes de la manière suivante :
 
 ```javascript
-{
+db.personnes.insert({
     "_id": "jdupont",
     "prenom": "Jean",
     "nom": "DUPONT",
@@ -12,7 +12,7 @@ Il est possible d'utiliser des tableaux dans les documents. Par exemple, on peut
         "Javascript",
         "HTML"
     ]
-}
+})
 ```
 
 Pour rechercher les personnes possédant la compétence "Java" :
@@ -46,7 +46,7 @@ db.personnes.update(
    {
      $push: {
         "competences": {
-           $each: [ "Javascript", "Scala" ],
+           $each: [ "Fortran", "Scala" ],
            $slice: -3
         }
      }
@@ -54,7 +54,7 @@ db.personnes.update(
 )
 ```
 
-Ici, nous avons ajouté "Javascript", "Scala" à droite du tableau et conservé les 3 derniers éléments (d'où le `-3`). Pour conserver les 3 premiers, on aurait utilisé la valeur `+3`.
+Ici, nous avons ajouté "Fortran", "Scala" à droite du tableau et conservé les 3 derniers éléments (d'où le `-3`). Pour conserver les 3 premiers, on aurait utilisé la valeur `+3`.
 
 ## Next
 

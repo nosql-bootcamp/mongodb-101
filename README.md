@@ -6,7 +6,7 @@
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
 
-<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">mongodb-101</span> par <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/nosql-bootcamp/mongodb-101" property="cc:attributionName" rel="cc:attributionURL">Chris WOODROW et Sébastien PRUNIER</a> est distribué sous les termes de la licence <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons - Attribution - NonCommercial - ShareAlike</a>.
+<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">mongodb-101</span> par <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/nosql-bootcamp/mongodb-101" property="cc:attributionName" rel="cc:attributionURL">Chris WOODROW, Sébastien PRUNIER et Benjamin CAVY</a> est distribué sous les termes de la licence <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons - Attribution - NonCommercial - ShareAlike</a>.
 
 ## Introduction
 
@@ -19,7 +19,7 @@ Les documents sont des documents [JSON](http://www.json.org/). Voici un exemple 
 ```json
 {
   "name": "Sébastien",
-  "age": 34,
+  "age": 35,
   "likes": ["MongoDB", "Javascript", "Scala"]
 }
 ```
@@ -28,7 +28,7 @@ Les documents sont des documents [JSON](http://www.json.org/). Voici un exemple 
 
 Les documents sont stockés dans des **collections**. Une **database** peut contenir plusieurs collections de documents. Un **serveur** MongoDB peut contenir plusieurs databases.
 
-Ce workshop est basé sur la **version 3.4.1** de MongoDB.
+Ce workshop est basé sur la **version 3.6.0** de MongoDB.
 
 ## Étapes du workshop
 
@@ -40,5 +40,5 @@ Ce workshop est basé sur la **version 3.4.1** de MongoDB.
 ## Liens utiles
 
 * Site officiel : https://www.mongodb.com/
+* Robo 3T (GUI - ex Robomongo) : https://robomongo.org/
 * Mongo Hacker (Mongo shell « on steroids ») : https://github.com/TylerBrock/mongo-hacker
-* Robomongo (GUI) : https://robomongo.org/

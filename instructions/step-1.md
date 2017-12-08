@@ -73,7 +73,7 @@ Plusieurs méthodes utiles sont disponibles sur un curseur, dont :
 * `sort()` pour trier les documents
 * `limit()` pour limiter le nombre de documents
 
-Par exemple pour récupérer les 3 personnes les plus agées :
+Par exemple pour récupérer les 3 personnes les plus âgées :
 
 ```javascript
 db.personnes.find().sort({"age": -1}).limit(3)
@@ -103,6 +103,11 @@ db.personnes.update({"age" : { "$lt" : 40 }}, {"$set" : {"categorie" : "Junior"}
 Remarque 1 : MongoDB crée automatiquement l'attribut "categorie" qui n'existait pas auparavant !
 
 Remarque 2 : depuis MongoDB 3.2, la méthode `updateMany()` peut être utilisée pour éviter d'avoir à préciser `{"multi" : true}` en option de l'instruction `update`. Essayez ! :-)
+
+```javascript
+db.personnes.updateMany({"age" : { "$gte" : 40 }}, {"$set" : {"categorie" : "Master"}})
+db.personnes.updateMany({"age" : { "$lt" : 40 }}, {"$set" : {"categorie" : "Junior"}})
+```
 
 ## D - Delete
 
