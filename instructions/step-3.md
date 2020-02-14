@@ -1,8 +1,8 @@
 # Étape 3 - Les index
 
-Pour comprendre l'utilité des index, rien de tel qu'[un petit dessin plutôt qu'un long discours](http://www.commitstrip.com/en/2014/06/03/the-problem-is-not-the-tool-itself/)
+Pour comprendre l'utilité des index, rien de tel qu'[un petit dessin plutôt qu'un long discours](https://www.commitstrip.com/fr/2014/06/03/the-problem-is-not-the-tool-itself)
 
-![commitstrip](http://www.commitstrip.com/wp-content/uploads/2014/06/Strip-Probl%C3%A8me-dIndex-650-finalenglish.jpg)
+![commitstrip](https://www.commitstrip.com/wp-content/uploads/2014/06/Strip-Probl%C3%A8me-dIndex-650-final.jpg)
 
 ## Création d'un index
 
@@ -32,7 +32,7 @@ Voici le résultat (vous pouvez remarquer qu'il existe un index créé par défa
       "_id": 1
     },
     "name": "_id_",
-    "ns": "workshop.personnes"
+    "ns": "mongo101.personnes"
   },
   {
     "v": 2,
@@ -40,7 +40,7 @@ Voici le résultat (vous pouvez remarquer qu'il existe un index créé par défa
       "nom": 1
     },
     "name": "nom_1",
-    "ns": "workshop.personnes"
+    "ns": "mongo101.personnes"
   }
 ]
 ```
