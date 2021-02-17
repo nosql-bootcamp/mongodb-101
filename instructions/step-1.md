@@ -62,7 +62,7 @@ Par défaut l'identifiant `_id` est toujours remonté. Il est tout de même poss
 ```javascript
 db.personnes.find({ "nom" : "DUPONT" }, {"_id" : 0, "nom" : 1})
 ```
-NB : les valeurs `1` et `0` peuvent être remplacées par `true` et `false` néanmoins la totalité de la doc Mongo utilise la notation `0` et `1`.
+**NB : les valeurs `1` et `0` peuvent être avantageusement remplacées par `true` et `false` néanmoins la totalité de la doc Mongo utilise la notation `0` et `1`.**
 
 Si aucun des deux paramètres n'est renseigné, tous les documents de la collection seront retournés.
 
