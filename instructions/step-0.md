@@ -4,11 +4,11 @@
 
 Téléchargez la dernière version stable de MongoDB sur [mongodb.com/download-center](https://www.mongodb.com/download-center/community) correspondant à votre système d'exploitation.
 
-Le workshop est basé sur la version 4.2.3 de MongoDB.
+Le workshop est basé sur la version 4.4.3 de MongoDB.
 
-Dézippez le bundle dans le dossier de votre choix, par exemple `$HOME/progs/mongodb-4.2.3`.
+Dézippez le bundle dans le dossier de votre choix, par exemple `$HOME/progs/mongodb-4.4.3`.
 
-Les exécutables nécessaires au fonctionnement de MongoDB se trouvent dans le dossier `$HOME/progs/mongodb-4.2.3/bin`, en particulier :
+Les exécutables nécessaires au fonctionnement de MongoDB se trouvent dans le dossier `$HOME/progs/mongodb-4.4.3/bin`, en particulier :
 
 * `mongod` : démon permettant de démarrer une instance de la base de données MongoDB.
 * `mongo` : shell JavaScript interactif permettant de se connecter à une instance `mongod`.
@@ -19,7 +19,7 @@ Par exemple sous Linux, ajoutez les lignes suivantes à votre fichier `.profile`
 
 ```bash
 # Path to MongoDB binaries
-PATH="$HOME/progs/mongodb-4.2.3/bin:$PATH"
+PATH="$HOME/progs/mongodb-4.4.3/bin:$PATH"
 export PATH
 ```
 
@@ -53,11 +53,12 @@ mongo
 Par défaut, le shell se connecte à l'instance `localhost` sur le port `27017`, sur une base de données de test. Voici les logs correspondant au lancement du shell :
 
 ```
-MongoDB shell version v4.2.3
+MongoDB shell version v4.4.3
 connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
-Implicit session: session { "id" : UUID("8bc36b45-499e-45a6-bc35-4c0288d7acce") }
-MongoDB server version: 4.2.3
-Mongo-Hacker 0.1.1
+Implicit session: session { "id" : UUID("df8fb556-3e18-474f-8c56-32359d8fd2a3") }
+MongoDB server version: 4.4.3
+Welcome to the MongoDB shell.
+For interactive help, type "help".
 ```
 
 Il est possible de préciser un `host` et un `port` particulier :
@@ -96,7 +97,7 @@ Pour afficher un document de la collection `personnes` :
 db.personnes.findOne()
 ```
 
-Le résultat est :
+Le résultat ressemble à :
 
 ```
 {
