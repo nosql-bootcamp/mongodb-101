@@ -45,7 +45,7 @@ Par exemple, pour rechercher les personnes se nommant "DUPONT" :
 db.personnes.find({ "nom" : "DUPONT" })
 ```
 
-Il existe un certain nombre d'opérateur utilisables pour filtrer lors de la recherche. Par exemple pour lister les personnes de plus de 60 ans :
+Il existe un certain nombre d'opérateurs utilisables pour filtrer lors de la recherche. Par exemple pour lister les personnes de plus de 60 ans :
 
 ```javascript
 db.personnes.find({ "age" : { "$gte" : 60 }})
