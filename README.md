@@ -28,7 +28,7 @@ Les documents sont des documents [JSON](http://www.json.org/). Voici un exemple 
 
 Les documents sont stockés dans des **collections**. Une **database** peut contenir plusieurs collections de documents. Un **serveur** MongoDB peut contenir plusieurs databases.
 
-Ce workshop est basé sur la **version 4.2.3** de MongoDB.
+Ce workshop est basé sur la **version 4.4.3** de MongoDB.
 
 ## Étapes du workshop
 
