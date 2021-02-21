@@ -10,7 +10,7 @@
 
 ## Introduction
 
-**MongoDB** est une base de données **NoSQL** créée en 2007 par la société 10gen (maintenant MongoDB Inc.) et est [Open Source](https://github.com/mongodb/mongo) depuis 2009 (Licence AGPL).
+**MongoDB** est une base de données **NoSQL** créée en 2007 par la société 10gen (maintenant MongoDB Inc.) et était [Open Source](https://github.com/mongodb/mongo) jusqu'en 2018 (Licence AGPL), un peu moins depuis (License SSPL).
 
 MongoDB est une base de données **orientée documents** et fait partie des bases [les plus populaires du marché](http://db-engines.com/en/ranking), toutes catégories confondues.
 
