@@ -1,6 +1,6 @@
 # MongoDB 101
 
-![mongo-logo](https://fr.wikipedia.org/wiki/Fichier:MongoDB-Logo.svg)
+![mongo-logo](https://upload.wikimedia.org/wikipedia/fr/4/45/MongoDB-Logo.svg)
 
 **MongoDB 101** est un workshop permettant de découvrir la base de données NoSQL MongoDB et son écosystème, étape par étape.
 
