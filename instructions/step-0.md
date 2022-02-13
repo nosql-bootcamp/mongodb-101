@@ -2,6 +2,18 @@
 
 ## Installation
 
+### Utilisation d'une version cloud
+
+Plutôt que d'installer MongoDB localement, vous pouvez profiter de l'essai gratuit (15 jours) de la version cloud qui est accessible sur[https://www.mongodb.com/atlas/database](https://www.mongodb.com/atlas/database) (bouton bleu `Try free` vert au milieu de la page) et laissez vous guider.
+
+Pensez à ajouter votre IP publique, si vous ne la connaissez pas, vous pouvez utiliser (https://www.whatismyip.com/fr/)[https://www.whatismyip.com/fr/]. 
+
+Créez un utilisateur de base de données (database user) afin de vous connecter à votre base de données. 
+
+Une fois la base créée, pour vous connecter à votre base afin de réaliser la suite de ce tutoriel, cliquez, dans la page d'administration d'Atlas, sur `Connect`, puis sur `Connect with MongoDB Shell`.
+
+### Installation locale
+
 Téléchargez la dernière version stable de MongoDB sur [mongodb.com/download-center](https://www.mongodb.com/download-center/community) correspondant à votre système d'exploitation.
 
 Le workshop est basé sur la version 4.4.3 de MongoDB.
