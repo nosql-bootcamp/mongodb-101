@@ -6,7 +6,7 @@
 
 Plutôt que d'installer MongoDB localement, vous pouvez profiter de l'essai gratuit (15 jours) de la version cloud qui est accessible sur[https://www.mongodb.com/atlas/database](https://www.mongodb.com/atlas/database) (bouton bleu `Try free` vert au milieu de la page) et laissez vous guider.
 
-Pensez à ajouter votre IP publique, si vous ne la connaissez pas, vous pouvez utiliser (https://www.whatismyip.com/fr/)[https://www.whatismyip.com/fr/]. 
+Pensez à ajouter votre IP publique, si vous ne la connaissez pas, vous pouvez utiliser [https://www.whatismyip.com/fr/](https://www.whatismyip.com/fr/). 
 
 Créez un utilisateur de base de données (database user) afin de vous connecter à votre base de données. 
 
